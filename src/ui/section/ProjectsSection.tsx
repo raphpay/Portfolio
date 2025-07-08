@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import MyCV from "../../assets/My-CV.pdf";
 import SmallLogoGreen from "../../assets/Small-Logo-Green.png";
 import FolderLogo from "../../assets/folder-logo.png";
 import HearingLogo from "../../assets/hearing-logo.png";
@@ -67,6 +68,8 @@ export default function ProjectsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
+              onClick={() => window.open(MyCV, "_blank")}
+              style={{ cursor: "pointer" }}
             >
               <img
                 src={project.image}
