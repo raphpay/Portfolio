@@ -63,7 +63,7 @@ export default function ProjectsSection() {
           {projects.map((project, idx) => (
             <motion.div
               key={project.title}
-              className="bg-white rounded-2xl border border-emerald-100 shadow-[0_6px_12px_rgba(16,185,129,0.25)] p-8 flex flex-col justify-between items-center h-full min-h-[440px] transition-transform duration-300 hover:-translate-y-2 hover:bg-emerald-100/20 group dark:bg-emerald-950/80 dark:border-sky-100/60"
+              className="bg-white rounded-2xl border border-emerald-100 shadow-[0_6px_12px_rgba(16,185,129,0.25)] p-8 flex flex-col justify-between items-center h-full min-h-[440px] transition-transform duration-300 hover:-translate-y-2 hover:bg-emerald-100/20 group dark:bg-emerald-950/80 dark:border-sky-100/60 dark:hover:bg-emerald-800/80"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -78,7 +78,7 @@ export default function ProjectsSection() {
               />
               <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-                <p className="text-gray-600 text-base mb-4 flex-1">
+                <p className="text-gray-600 dark:text-emerald-200/80 text-base mb-4 flex-1">
                   {project.description}
                 </p>
               </div>

@@ -2,7 +2,7 @@ import React from "react";
 import PhotoPro from "../../assets/photo-pro-rounded.png";
 import AnimatedBackgroundShape from "../components/AnimatedBackgroundShape";
 
-const highlight = "font-bold text-emerald-500 dark:text-emerald-100";
+const highlight = "font-bold text-emerald-500 dark:text-emerald-500";
 
 const HeroSection: React.FC = () => {
   return (
@@ -19,7 +19,7 @@ const HeroSection: React.FC = () => {
           />
         </div>
         {/* Headline */}
-        <h1 className="text-3xl md:text-5xl font-extrabold text-black text-center mb-4 leading-tight dark:text-white">
+        <h1 className="text-3xl md:text-5xl font-extrabold text-black text-center mb-4 leading-tight dark:text-gray-900/50">
           Bonjour,<br></br> je suis{" "}
           <span className={highlight}>
             Raphaël Payet,<br></br>développeur Web & Mobile
@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
           .
         </h1>
         {/* Description */}
-        <p className="text-lg md:text-xl text-gray-500 text-center max-w-xl font-medium mb-2 dark:text-sky-100">
+        <p className="text-lg md:text-xl text-gray-500 text-center max-w-xl font-medium mb-2 dark:text-gray-700/50">
           Je conçois et développe des sites web modernes et des applications
           mobiles{" "}
           <span className={highlight}>
@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
           </span>
           .
         </p>
-        <p className="text-lg md:text-xl text-gray-500 text-center max-w-xl font-medium dark:text-sky-100">
+        <p className="text-lg md:text-xl text-gray-500 text-center max-w-xl font-medium dark:text-gray-900/50">
           <br></br>
           Spécialisé en <span className={highlight}>React (web)</span>,{" "}
           <span className={highlight}>React Native</span> et{" "}

@@ -71,7 +71,7 @@ const cardVariants = {
 
 const OffersSection: React.FC = () => {
   return (
-    <section className="w-full bg-white py-20 px-4 relative overflow-hidden">
+    <section className="w-full bg-white px-4 relative overflow-hidden">
       <AnimatedBackgroundShape />
       <div className="max-w-6xl mx-auto relative z-10">
         <h2 className="text-2xl md:text-4xl font-extrabold text-gray-900 mb-12 text-center">
@@ -81,7 +81,7 @@ const OffersSection: React.FC = () => {
           {services.map((service, idx) => (
             <motion.div
               key={idx}
-              className="bg-white/80 rounded-2xl border border-emerald-100 shadow-[0_6px_12px_rgba(16,185,129,0.25)] p-8 flex flex-col justify-between items-center h-full min-h-[440px] transition-transform duration-300 hover:-translate-y-2 hover:bg-emerald-100/20 group dark:bg-emerald-950/80 dark:border-sky-100/60"
+              className="bg-white/80 rounded-2xl border border-emerald-100 shadow-[0_6px_12px_rgba(16,185,129,0.25)] p-8 flex flex-col justify-between items-center h-full min-h-[440px] transition-transform duration-300 hover:-translate-y-2 hover:bg-emerald-100/20 group dark:bg-emerald-950/50 dark:border-sky-100/60 dark:hover:bg-emerald-800/80"
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.3 }}
@@ -97,15 +97,15 @@ const OffersSection: React.FC = () => {
                   {service.title}
                 </h3>
               </div>
-              <p className="text-base md:text-md text-emerald-900 font-semibold mb-4 text-center">
+              <p className="text-base md:text-md text-emerald-900 dark:text-emerald-200/80 font-semibold mb-4 text-center">
                 {service.description}
               </p>
-              <ul className="text-gray-500 text-sm md:text-base space-y-1 list-disc list-inside text-left font-normal mb-2">
+              <ul className="text-gray-500 dark:text-gray-100 text-sm md:text-base space-y-1 list-disc list-inside text-left font-normal mb-2">
                 {service.points.map((point, i) => (
                   <li key={i}>{point}</li>
                 ))}
               </ul>
-              <div className="mt-4 text-emerald-800 font-bold text-lg text-center self-stretch">
+              <div className="mt-4 text-emerald-800 dark:text-emerald-200/80 font-bold text-lg text-center self-stretch">
                 {service.price}
               </div>
             </motion.div>

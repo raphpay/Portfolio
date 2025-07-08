@@ -46,7 +46,7 @@ const Navbar = () => {
     >
       <div className="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between">
         {/* Logo and Brand */}
-        <span className="flex items-center gap-2 font-bold text-lg text-emerald-500 dark:text-emerald-100">
+        <span className="flex items-center gap-2 font-bold text-lg text-emerald-500 dark:text-emerald-800">
           <img
             src={isLarge ? Logo : SmallLogo}
             alt="Logo"

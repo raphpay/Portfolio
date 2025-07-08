@@ -113,7 +113,7 @@ const SkillsSection: React.FC = () => {
                 {group.items.map((item) => (
                   <motion.div
                     key={item.name}
-                    className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-100 shadow-md font-semibold text-gray-800 text-base transition-colors duration-200 hover:bg-emerald-100/20 cursor-pointer dark:bg-emerald-950/80 dark:hover:bg-emerald-100/30"
+                    className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-100 shadow-md font-semibold text-gray-800 dark:text-gray-200 text-base transition-colors duration-200 hover:bg-emerald-100/20 cursor-pointer dark:bg-emerald-950/80 dark:hover:bg-emerald-100/30"
                     variants={badgeVariants}
                     initial="rest"
                     whileHover="hover"
