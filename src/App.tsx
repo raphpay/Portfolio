@@ -1,3 +1,4 @@
+import Footer from "./ui/components/Footer";
 import Navbar from "./ui/components/Navbar";
 import Section from "./ui/components/Section";
 import ContactSection from "./ui/section/ContactSection";
@@ -47,6 +48,7 @@ export default function App() {
           </Section>
         ))}
       </div>
+      <Footer />
     </div>
   );
 }
