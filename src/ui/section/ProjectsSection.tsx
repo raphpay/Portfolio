@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import AnimatedBackgroundShape from "../components/AnimatedBackgroundShape";
 
 const projects = [
   {
@@ -41,7 +42,8 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-12">
+    <section className="w-full bg-white py-20 px-4 relative overflow-hidden">
+      <AnimatedBackgroundShape />
       <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-10">
         Mon travail
       </h2>
@@ -69,6 +71,6 @@ export default function ProjectsSection() {
           </motion.div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
