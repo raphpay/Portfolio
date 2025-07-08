@@ -1,5 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import Logo from "../../assets/Logo-Website.png";
+import SmallLogo from "../../assets/Small-Logo.png";
 import { useIsLargeScreen } from "../../hooks/useIsLargeScreen";
 
 const navItems = [
@@ -43,8 +45,13 @@ const Navbar = () => {
       className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-md border-b border-gray-200"
     >
       <div className="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between">
-        {/* Logo or Brand (optional) */}
-        <span className="font-bold text-lg text-fuchsia-700">
+        {/* Logo and Brand */}
+        <span className="flex items-center gap-2 font-bold text-lg text-fuchsia-700">
+          <img
+            src={isLarge ? Logo : SmallLogo}
+            alt="Logo"
+            className="h-10 md:h-15 pr-2 object-contain"
+          />
           Raphaël Payet
         </span>
         {isLarge ? (
