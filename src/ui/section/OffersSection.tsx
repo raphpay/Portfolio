@@ -73,8 +73,26 @@ const cardVariants = {
 
 const OffersSection: React.FC = () => {
   return (
-    <section className="w-full bg-white py-20 px-4">
-      <div className="max-w-6xl mx-auto">
+    <section className="w-full bg-white py-20 px-4 relative overflow-hidden">
+      {/* Animated Background Shape */}
+      <motion.div
+        className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none"
+        initial={{ scale: 0.9, opacity: 0.3 }}
+        animate={{ scale: 1.05, opacity: 0.5 }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          repeatType: "reverse",
+          ease: "easeInOut",
+        }}
+      >
+        <motion.div
+          className="w-96 h-96 md:w-[38rem] md:h-[38rem] rounded-full bg-gradient-to-tr from-indigo-200/40 via-purple-200/30 to-fuchsia-200/20 blur-2xl shadow-2xl"
+          animate={{ rotate: [0, 10, -10, 0] }}
+          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+        />
+      </motion.div>
+      <div className="max-w-6xl mx-auto relative z-10">
         <h2 className="text-2xl md:text-4xl font-extrabold text-gray-900 mb-12 text-center">
           Ce que je propose
         </h2>
