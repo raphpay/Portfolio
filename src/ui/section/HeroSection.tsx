@@ -1,4 +1,5 @@
 import React from "react";
+import PhotoPro from "../../assets/photo-pro-rounded.png";
 import AnimatedBackgroundShape from "../components/AnimatedBackgroundShape";
 
 const highlight = "font-bold text-emerald-500 dark:text-emerald-100";
@@ -11,9 +12,11 @@ const HeroSection: React.FC = () => {
       <div className="relative z-10 flex flex-col items-center">
         {/* Profile Photo Placeholder */}
         <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-emerald-800 via-emerald-500 to-emerald-100 shadow-xl flex items-center justify-center mb-8 border-4 border-emerald-950">
-          <span className="text-4xl md:text-5xl text-white font-bold select-none">
-            👤
-          </span>
+          <img
+            src={PhotoPro}
+            alt="ProfilePic"
+            className="object-contain w-32 h-32 md:w-40 md:h-40 "
+          />
         </div>
         {/* Headline */}
         <h1 className="text-3xl md:text-5xl font-extrabold text-black text-center mb-4 leading-tight dark:text-white">
