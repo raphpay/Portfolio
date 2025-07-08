@@ -5,7 +5,7 @@ import SmallLogo from "../../assets/Small-Logo.png";
 import { useIsLargeScreen } from "../../hooks/useIsLargeScreen";
 
 const navItems = [
-  { label: "Home", to: "hero" },
+  { label: "Home", to: "home" },
   { label: "Mes offres", to: "services" },
   { label: "Mes compétences", to: "skills" },
   { label: "Mes projets", to: "projects" },
