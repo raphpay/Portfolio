@@ -8,7 +8,7 @@ import SkillsSection from "./ui/section/SkillsSection";
 
 export default function App() {
   const sections = [
-    { key: "header", label: "Header" },
+    { key: "home", label: "Home" },
     { key: "services", label: "Services" },
     { key: "skills", label: "Skills" },
     { key: "projects", label: "Projects" },
@@ -24,7 +24,7 @@ export default function App() {
       >
         {sections.map((section) => (
           <Section key={section.key} id={section.key}>
-            {section.key === "header" ? (
+            {section.key === "home" ? (
               <HeroSection />
             ) : section.key === "services" ? (
               <OffersSection />
