@@ -1,4 +1,5 @@
 import Section from "./ui/components/Section";
+import ContactSection from "./ui/section/ContactSection";
 import HeroSection from "./ui/section/HeroSection";
 import OffersSection from "./ui/section/OffersSection";
 import ProjectsSection from "./ui/section/ProjectsSection";
@@ -28,6 +29,8 @@ export default function App() {
             <SkillsSection />
           ) : section.key === "projects" ? (
             <ProjectsSection />
+          ) : section.key === "contact" ? (
+            <ContactSection />
           ) : (
             <div className="flex flex-col items-center justify-center w-full h-full">
               <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4">
