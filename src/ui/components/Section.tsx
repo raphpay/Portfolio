@@ -1,5 +1,6 @@
-import { motion, useInView } from "framer-motion";
-import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import React from "react";
+import { useIsLargeScreen } from "../../hooks/useIsLargeScreen";
 
 interface SectionProps {
   children: React.ReactNode;
@@ -7,28 +8,33 @@ interface SectionProps {
 }
 
 const Section: React.FC<SectionProps> = ({ children, id }) => {
-  const sectionVariants = {
-    hidden: { opacity: 0, y: 60 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
-    exit: { opacity: 0, y: -40, transition: { duration: 0.5 } },
-  };
+  const isLarge = useIsLargeScreen();
 
-  const ref = useRef(null);
-  const inView = useInView(ref, { amount: 0.5, once: false });
+  if (isLarge) {
+    return (
+      <motion.section
+        id={id}
+        className="w-full min-h-screen flex items-center justify-center bg-white py-8"
+        initial={{ opacity: 0, y: 60 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -40 }}
+        transition={{ duration: 0.7 }}
+        style={{ scrollMarginTop: 80 }}
+      >
+        {children}
+      </motion.section>
+    );
+  }
+
+  // On mobile: no animation
   return (
-    <motion.section
-      ref={ref}
+    <section
       id={id}
-      className="snap-start min-h-screen w-full flex items-center justify-center bg-white"
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      exit="exit"
-      variants={sectionVariants}
-      transition={{ duration: 0.7 }}
-      style={{ scrollSnapAlign: "start" }}
+      className="w-full min-h-screen flex items-center justify-center bg-white py-8"
+      style={{ scrollMarginTop: 80 }}
     >
       {children}
-    </motion.section>
+    </section>
   );
 };
 
