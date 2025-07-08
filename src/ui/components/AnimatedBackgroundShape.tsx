@@ -17,7 +17,7 @@ const AnimatedBackgroundShape: React.FC = () => {
         }}
       >
         <motion.div
-          className="w-80 h-80 md:w-[32rem] md:h-[32rem] rounded-full bg-gradient-to-tr from-indigo-800/40 via-purple-700/30 to-fuchsia-700/20 blur-2xl shadow-2xl"
+          className="w-80 h-80 md:w-[32rem] md:h-[32rem] rounded-full bg-gradient-to-tr from-emerald-500/40 via-emerald-800/30 to-emerald-950/20 blur-2xl shadow-2xl dark:from-emerald-800/60 dark:via-emerald-950/40 dark:to-emerald-950/10"
           animate={{ rotate: [0, 10, -10, 0] }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
         />

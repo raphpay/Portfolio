@@ -46,7 +46,7 @@ const Navbar = () => {
     >
       <div className="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between">
         {/* Logo and Brand */}
-        <span className="flex items-center gap-2 font-bold text-lg text-fuchsia-700">
+        <span className="flex items-center gap-2 font-bold text-lg text-emerald-500 dark:text-emerald-100">
           <img
             src={isLarge ? Logo : SmallLogo}
             alt="Logo"
@@ -60,8 +60,8 @@ const Navbar = () => {
               <motion.a
                 key={item.to}
                 href={`#${item.to}`}
-                className="text-gray-800 font-semibold text-base md:text-lg px-2 py-1 rounded transition-colors duration-200 hover:text-fuchsia-600 focus:text-fuchsia-600 focus:outline-none cursor-pointer"
-                whileHover={{ scale: 1.08, color: "#C026D3" }}
+                className="text-gray-800 font-semibold text-base md:text-lg px-2 py-1 rounded transition-colors duration-200 hover:text-emerald-500 focus:text-emerald-500 focus:outline-none cursor-pointer dark:hover:text-emerald-100 dark:focus:text-emerald-100"
+                whileHover={{ scale: 1.08, color: "#22c55e" }}
                 whileTap={{ scale: 0.96 }}
                 tabIndex={0}
                 onClick={(e) => {
@@ -81,18 +81,18 @@ const Navbar = () => {
               onClick={() => setOpen((v) => !v)}
             >
               <span
-                className="block w-7 h-0.5 bg-fuchsia-700 mb-1.5 rounded transition-all duration-300"
+                className="block w-7 h-0.5 bg-emerald-800 mb-1.5 rounded transition-all duration-300"
                 style={{
                   transform: open ? "rotate(45deg) translateY(7px)" : "none",
                 }}
               />
               <span
-                className={`block w-7 h-0.5 bg-fuchsia-700 mb-1.5 rounded transition-all duration-300 ${
+                className={`block w-7 h-0.5 bg-emerald-800 mb-1.5 rounded transition-all duration-300 ${
                   open ? "opacity-0" : ""
                 }`}
               />
               <span
-                className="block w-7 h-0.5 bg-fuchsia-700 rounded transition-all duration-300"
+                className="block w-7 h-0.5 bg-emerald-800 rounded transition-all duration-300"
                 style={{
                   transform: open ? "rotate(-45deg) translateY(-7px)" : "none",
                 }}
@@ -105,13 +105,13 @@ const Navbar = () => {
                   animate="visible"
                   exit="hidden"
                   variants={menuVariants}
-                  className="absolute top-full left-0 w-full bg-white/95 shadow-lg border-b border-gray-200 flex flex-col items-center py-4 gap-2 z-50"
+                  className="absolute top-full left-0 w-full bg-white/95 shadow-lg border-b border-emerald-950 flex flex-col items-center py-4 gap-2 z-50"
                 >
                   {navItems.map((item) => (
                     <motion.a
                       key={item.to}
                       href={`#${item.to}`}
-                      className="text-gray-800 font-semibold text-lg px-4 py-2 rounded transition-colors duration-200 hover:text-fuchsia-600 focus:text-fuchsia-600 focus:outline-none cursor-pointer w-full text-center"
+                      className="text-gray-800 font-semibold text-lg px-4 py-2 rounded transition-colors duration-200 hover:text-emerald-500 focus:text-emerald-500 focus:outline-none cursor-pointer w-full text-center dark:hover:text-emerald-100 dark:focus:text-emerald-100"
                       variants={itemVariants}
                       onClick={(e) => {
                         e.preventDefault();

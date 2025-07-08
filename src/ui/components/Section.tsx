@@ -14,7 +14,7 @@ const Section: React.FC<SectionProps> = ({ children, id }) => {
     return (
       <motion.section
         id={id}
-        className="w-full min-h-screen flex items-center justify-center bg-white py-8"
+        className="w-full min-h-screen flex items-center justify-center bg-white pb-8"
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -40 }}

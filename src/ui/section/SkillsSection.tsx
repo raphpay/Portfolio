@@ -68,7 +68,10 @@ const techStack = [
     category: "Outils",
     items: [
       { name: "Git", icon: <GitBranch size={28} className="text-rose-500" /> },
-      { name: "Figma", icon: <Figma size={28} className="text-fuchsia-500" /> },
+      {
+        name: "Figma",
+        icon: <Figma size={28} className="text-emerald-500" />,
+      },
       {
         name: "Firebase",
         icon: <Cloud size={28} className="text-yellow-500" />,
@@ -94,7 +97,7 @@ const badgeVariants = {
 
 const SkillsSection: React.FC = () => {
   return (
-    <section className="w-full bg-white py-20 px-4 relative overflow-hidden">
+    <section className="w-full bg-gradient-to-r from-emerald-100 via-sky-100 to-white py-20 px-4 relative overflow-hidden dark:bg-emerald-800">
       <AnimatedBackgroundShape />
       <div className="max-w-5xl mx-auto relative z-10">
         <h2 className="text-2xl md:text-4xl font-extrabold text-gray-900 mb-12 text-center">
@@ -110,7 +113,7 @@ const SkillsSection: React.FC = () => {
                 {group.items.map((item) => (
                   <motion.div
                     key={item.name}
-                    className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-100 shadow-md font-semibold text-gray-800 text-base transition-colors duration-200 hover:bg-indigo-50 cursor-pointer"
+                    className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-100 shadow-md font-semibold text-gray-800 text-base transition-colors duration-200 hover:bg-emerald-100/20 cursor-pointer dark:bg-emerald-950/80 dark:hover:bg-emerald-100/30"
                     variants={badgeVariants}
                     initial="rest"
                     whileHover="hover"

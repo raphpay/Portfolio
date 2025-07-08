@@ -5,7 +5,7 @@ import AnimatedBackgroundShape from "../components/AnimatedBackgroundShape";
 
 const services = [
   {
-    icon: <Store size={36} className="text-indigo-500 mb-2" />,
+    icon: <Store size={36} className="text-emerald-500 mb-2" />,
     title: "Commerce et restaurants locaux",
     description:
       "Boostez la visibilité de votre commerce ou restaurant avec un site vitrine moderne ou une mini-application simple et efficace, adaptée à vos besoins locaux.",
@@ -18,7 +18,7 @@ const services = [
     price: "À partir de 900€",
   },
   {
-    icon: <Globe size={36} className="text-fuchsia-500 mb-2" />,
+    icon: <Globe size={36} className="text-emerald-800 mb-2" />,
     title: "Site Web Moderne",
     description:
       "Un site professionnel développé avec React, rapide, responsive, optimisé pour l'expérience utilisateur et le référencement local.",
@@ -32,7 +32,7 @@ const services = [
     price: "À partir de 1 800€",
   },
   {
-    icon: <Smartphone size={36} className="text-purple-500 mb-2" />,
+    icon: <Smartphone size={36} className="text-sky-400 mb-2" />,
     title: "Application Mobile Locale",
     description:
       "Déployez une application mobile intuitive pour Android et iOS, idéale pour votre cible.",
@@ -46,7 +46,7 @@ const services = [
     price: "À partir de 3 500€",
   },
   {
-    icon: <Workflow size={36} className="text-emerald-500 mb-2" />,
+    icon: <Workflow size={36} className="text-yellow-900 mb-2" />,
     title: "Numérisation de service",
     description:
       "Automatisez ou digitalisez vos services avec une solution sur mesure : gestion de réservations, demandes administratives, ticketing, et plus encore.",
@@ -81,7 +81,7 @@ const OffersSection: React.FC = () => {
           {services.map((service, idx) => (
             <motion.div
               key={idx}
-              className="bg-gray-100 rounded-2xl shadow-xl p-8 flex flex-col justify-between items-center h-full min-h-[440px] transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl hover:bg-gray-50 group"
+              className="bg-white/80 rounded-2xl border border-emerald-100 shadow-[0_6px_12px_rgba(16,185,129,0.25)] p-8 flex flex-col justify-between items-center h-full min-h-[440px] transition-transform duration-300 hover:-translate-y-2 hover:bg-emerald-100/20 group dark:bg-emerald-950/80 dark:border-sky-100/60"
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.3 }}
@@ -97,7 +97,7 @@ const OffersSection: React.FC = () => {
                   {service.title}
                 </h3>
               </div>
-              <p className="text-base md:text-md text-indigo-700 font-semibold mb-4 text-center">
+              <p className="text-base md:text-md text-emerald-900 font-semibold mb-4 text-center">
                 {service.description}
               </p>
               <ul className="text-gray-500 text-sm md:text-base space-y-1 list-disc list-inside text-left font-normal mb-2">
@@ -105,7 +105,7 @@ const OffersSection: React.FC = () => {
                   <li key={i}>{point}</li>
                 ))}
               </ul>
-              <div className="mt-4 text-indigo-700 font-bold text-lg text-center self-stretch">
+              <div className="mt-4 text-emerald-800 font-bold text-lg text-center self-stretch">
                 {service.price}
               </div>
             </motion.div>

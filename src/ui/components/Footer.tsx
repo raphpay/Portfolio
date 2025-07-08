@@ -21,7 +21,7 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-gray-900/90 text-white py-8 px-4 mt-12 border-t border-gray-800">
+    <footer className="w-full bg-emerald-950 text-white py-8 px-4 mt-12 border-t border-emerald-800 dark:bg-emerald-800 dark:border-emerald-950">
       <div className="max-w-4xl mx-auto flex flex-col items-center">
         <div className="flex flex-wrap justify-center gap-8 mb-4">
           {socialLinks.map((link) => (
@@ -31,11 +31,11 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={link.label}
-              className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-800 hover:bg-fuchsia-700 transition-colors duration-200 shadow-md group"
-              whileHover={{ scale: 1.13, backgroundColor: "#C026D3" }}
+              className="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-800 hover:bg-emerald-500 transition-colors duration-200 shadow-md group dark:bg-emerald-950 dark:hover:bg-emerald-800"
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
             >
-              <span className="text-white group-hover:text-white">
+              <span className="text-emerald-100 group-hover:text-sky-100 transition-colors duration-200 dark:text-sky-100 dark:group-hover:text-emerald-100">
                 {link.icon}
               </span>
             </motion.a>

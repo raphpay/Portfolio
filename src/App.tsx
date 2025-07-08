@@ -20,7 +20,7 @@ export default function App() {
     <div>
       <Navbar />
       <div
-        className="h-screen w-full overflow-y-scroll scroll-smooth snap-y snap-mandatory pt-16"
+        className="h-screen w-full overflow-y-scroll scroll-smooth snap-y snap-mandatory"
         style={{ WebkitOverflowScrolling: "touch" }}
       >
         {sections.map((section) => (
