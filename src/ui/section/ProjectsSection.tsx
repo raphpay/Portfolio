@@ -1,42 +1,52 @@
 import { motion } from "framer-motion";
+import SmallLogoGreen from "../../assets/Small-Logo-Green.png";
+import FolderLogo from "../../assets/folder-logo.png";
+import HearingLogo from "../../assets/hearing-logo.png";
+import LaravelLogo from "../../assets/laravel-logo.png";
+import VaporLogo from "../../assets/vapor-logo.png";
 import AnimatedBackgroundShape from "../components/AnimatedBackgroundShape";
 
 const projects = [
   {
-    title: "Portfolio Website",
+    title: "Site-web Portfolio",
     description:
-      "A personal portfolio built with React and Tailwind CSS, showcasing my web development projects and skills.",
-    image: "/vite.svg",
+      "Un portfolio personnel construit avec React et Tailwind CSS, afin de montrer mes compétences en développement et projet web.",
+    image: SmallLogoGreen,
   },
   {
-    title: "E-commerce Store",
+    title:
+      "Amélioration d'un site existant pour une meilleure expérience utilisateur et conformité réglementaire",
     description:
-      "A modern e-commerce platform with product listings, shopping cart, and secure checkout.",
-    image: "/vite.svg",
+      "J'ai renforcé une équipe technique pour moderniser l'interface d'un site web, rendre la navigation plus simple et agréable pour les utilisateurs, et intégrer des fonctionnalités essentielles pour respecter les normes en vigueur (sécurité, accessibilité, réglementation).",
+    image: LaravelLogo,
   },
   {
-    title: "Blog Platform",
+    title:
+      "Création d'un système sécurisé pour gérer les données d'une application web",
     description:
-      "A full-featured blog platform with markdown support, comments, and user authentication.",
-    image: "/vite.svg",
+      "J'ai conçu et développé le backend complet d'une application web, avec une API claire et sécurisée permettant de gérer les utilisateurs, documents et données en toute fiabilité. Le tout pensé pour être facilement évolutif et rapide à connecter à l'interface côté client.",
+    image: VaporLogo,
   },
   {
-    title: "Task Manager App",
+    title:
+      "Développement d'une application sécurisée pour la gestion de documents sensibles",
     description:
-      "A productivity app to manage daily tasks, set reminders, and track progress.",
-    image: "/vite.svg",
+      "J'ai accompagné un client de A à Z dans la création d'un logiciel desktop sur-mesure, permettant de stocker, consulter et sécuriser des documents confidentiels (médicaux, légaux, etc.). De l'architecture à la mise en production, j'ai assuré le développement complet de l'application et de son système de gestion d'accès, avec une priorité donnée à la sécurité des données et à la simplicité d'usage.",
+    image: FolderLogo,
   },
   {
-    title: "Weather Dashboard",
+    title:
+      "Développement d'une application mobile pour améliorer l'expérience auditive des seniors",
     description:
-      "A dashboard displaying real-time weather data and forecasts for multiple cities.",
-    image: "/vite.svg",
+      "Au sein d'une start-up innovante, j'ai contribué à créer une application mobile facilitant le réglage personnalisé des aides auditives via smartphone, tout en permettant aux audioprothésistes de suivre leurs patients à distance. J'ai travaillé main dans la main avec l'équipe produit pour rendre l'expérience simple, accessible, et adaptée aux besoins spécifiques des utilisateurs seniors.",
+    image: HearingLogo,
   },
   {
-    title: "Chat Application",
+    title:
+      "Création d'une web app pour faciliter la gestion des clubs sportifs",
     description:
-      "A real-time chat app with group messaging, emojis, and notifications.",
-    image: "/vite.svg",
+      "Je développe une application web intuitive permettant aux clubs sportifs de gérer simplement leurs membres, cotisations et trésorerie. Conçue avec React, Firebase et Tailwind CSS, cette solution offre un suivi clair, une interface moderne et une administration facilitée, pour que les responsables se concentrent sur leur passion, sans perdre de temps sur la gestion.",
+    image: SmallLogoGreen,
   },
 ];
 
