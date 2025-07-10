@@ -71,7 +71,7 @@ const cardVariants = {
 
 const OffersSection: React.FC = () => {
   return (
-    <section className="w-full bg-white px-4 relative overflow-hidden">
+    <section className="w-full bg-white px-4 py-12 relative overflow-hidden">
       <AnimatedBackgroundShape />
       <div className="max-w-6xl mx-auto relative z-10">
         <h2 className="text-2xl md:text-4xl font-extrabold text-gray-900 mb-12 text-center">
